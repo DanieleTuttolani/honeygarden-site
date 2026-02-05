@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Honey Garden – Creator Management Agency</title>
+  <meta name="description" content="Honey Garden è un'agenzia avanzata per la gestione, crescita e monetizzazione di creator OnlyFans e social media." />
+
+  <!-- SEO base -->
+  <meta property="og:title" content="Honey Garden – Creator Management Agency">
+  <meta property="og:description" content="Gestione, crescita e monetizzazione avanzata per creator OnlyFans.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/media/platforms/honeygarden-box-logo.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+  <!-- Favicon opzionale -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="icon" href="/media/misc/favicon.png" /> -->
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <!-- App root -->
+  <div class="fixed bottom-5 right-5 h-10-w-10-bg-blue z-50 flex">
+    <a
+      href="https://wa.me/393520180705?text=Ciao!%20Ho%20visitato%20il%20vostro%20sito%20e%20ho%20notato%20che%20offrite%20servizi%20di%20gestione%20per%20profili%20OnlyFans.%20Sono%20molto%20interessatoa%20a%20saperne%20di%20pi%C3%B9%20e%20vorrei%20capire%20meglio%20come%20funziona%20la%20collaborazione%20con%20la%20vostra%20agenzia.%20Potete%20darmi%20un%20overview%20completo%20dei%20vostri%20servizi%20una%20volta%20che%20si%20decide%20di%20collaborare%3F%20Grazie%20in%20anticipo%20per%20le%20informazioni!" 
+      class="rounded-xl bg-green-600 p-3 self-center"
+      title="Contattami su WhatsApp"
+      >
+      <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+  </div>
+  <div id="app">
+
+  </div>
+  <!-- Luxury cursor -->
+  <div id="lux-cursor-core"></div>
+  <div id="lux-cursor-aura"></div>
+
+  <!-- Main script -->
+  <script type="module" src="/src/main.js"></script>
+
+  <!-- SPA Router (no reload) -->
+  <script>
+    document.addEventListener("click", e => {
+      const link = e.target.closest("[data-link]")
+      if (link) {
+        e.preventDefault()
+        history.pushState(null, "", link.href)
+        window.dispatchEvent(new PopStateEvent("popstate"))
+      }
+    })
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+</body>
+</html>
